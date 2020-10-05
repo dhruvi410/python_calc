@@ -2,6 +2,7 @@
 
 # step 1 create test.py
 This file is used to test basic functionality.
+![alt text](https://github.com/dhruvi410/python_calc/blob/main/test.py)
 
 # step 2 create view.py
 This file is used to interect with end users.
