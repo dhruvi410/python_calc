@@ -145,6 +145,19 @@ if __name__ == '__main__':
 
 # step 4 create model.py
 This file handle the calculator's operation.
+```
+ERROR_MSG = 'ERROR'
+
+# Create a Model to handle the calculator's operation
+def evaluateExpression(expression):
+    """Evaluate an expression."""
+    try:
+        result = str(eval(expression, {}, {}))
+    except Exception:
+        result = ERROR_MSG
+
+    return result
+```
 
 # step 5 controller.py
 This file act as an interface between model and view files to view the render the final output.
