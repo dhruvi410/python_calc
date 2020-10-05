@@ -2,7 +2,27 @@
 
 # step 1 create test.py
 This file is used to test basic functionality.
-![alt text](https://github.com/dhruvi410/python_calc/blob/main/test.py)
+```
+import sys
+
+from PyQt5.QtWidgets import QApplication
+from PyQt5.QtWidgets import QLabel
+from PyQt5.QtWidgets import QWidget
+
+app = QApplication(sys.argv)
+
+window = QWidget()
+window.setWindowTitle('PyQt5 App')
+window.setGeometry(100, 100, 280, 80)
+window.move(600, 15)
+helloMsg = QLabel('This is Test', parent=window)
+helloMsg.move(60, 30)
+
+window.show()
+
+sys.exit(app.exec_())
+
+```
 
 # step 2 create view.py
 This file is used to interect with end users.
